@@ -175,6 +175,7 @@ def option_r() -> None:
 
 
 def option_t() -> None:
+    global wood
     if random.randint(0, 4) == 0:
         print(skip)
         print("\nYou cut down the tree!")
@@ -197,7 +198,6 @@ def option_i() -> None:
 
 while game_state:
     draw_game()
-    print(score)
     print("\nWhat do you want to do?")
     for i in show_options():
         print(f"    {i}")
