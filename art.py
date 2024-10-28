@@ -1,5 +1,5 @@
 
-ground = [
+ground = [ # the ground
     "                   ",
     "                   ",
     "                   ",
@@ -11,7 +11,7 @@ ground = [
     "_______\\/__________",
 ]
 
-tree = [
+tree = [ # the tree
     "                   ",
     "        _____      ",
     "     __|     |__   ",
@@ -23,7 +23,7 @@ tree = [
     "________|  |_______",
 ]
 
-tree1 = [
+tree1 = [ # the tree
     "                   ",
     "        _____      ",
     "     __|     |__   ",
@@ -35,7 +35,7 @@ tree1 = [
     "________|  |_______",
 ]
 
-tree2 = [
+tree2 = [ # the tree
     "                   ",
     "        ____       ",
     "     __|    |__    ",
@@ -47,7 +47,7 @@ tree2 = [
     "________|  |_______",
 ]
 
-tree_fallen = [
+tree_fallen = [ # the tree
     "                           ",
     "                           ",
     "                           ",
@@ -59,7 +59,7 @@ tree_fallen = [
     "_|  |_________|_____|______",
 ]
 
-steve = [
+steve = [ # the steve
     "                   ",
     "                   ",
     "                   ",
@@ -71,7 +71,7 @@ steve = [
     "________/ \\________",
 ]
 
-steve_fallen = [
+steve_fallen = [ # the steve
     "                         ",
     "                         ",
     "                         ",
@@ -83,7 +83,7 @@ steve_fallen = [
     "__________________|___|__",
 ]
 
-snake = [
+snake = [ # the snake
     "                       ",
     "                       ",
     "                       ",
@@ -96,21 +96,21 @@ snake = [
 ]
 
 
-empty_slot = [
+empty_slot = [ # the empty slot
     " ______  ",
     "|      | ",
     "|      | ",
     "|______| "
 ]
 
-axe_slot = [
+axe_slot = [ # the axe slot
     " ______  ",
     "|  |D) | ",
     "|  |   | ",
     "|__|___| "
 ]
 
-wood_slot = [
+wood_slot = [ # the wood slot
     " ______  ",
     "|  __  | ",
     "| |__| | ",
