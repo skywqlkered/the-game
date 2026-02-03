@@ -52,9 +52,12 @@ def read_scorefile() -> None: # prints the scoreboard with an indent
     print("")
 
 
-def start_game() -> bool: # asks the user if they want to play
+def start_game() -> bool | None: # asks the user if they want to play
     global game_state, score
     score = 0
+    global wood, tree_state
+    wood = False
+    tree_state = False
 
     answer = input("Do you want to play a game? ")
     while answer.lower() not in yes + no:
@@ -218,10 +221,14 @@ def option_t() -> None: # called when user chooses the tree
         death()
     else:
         tree_animation()
-
-        input(skip + "You now have wood! Press enter to continue...")
-        wood = True
-        update_score()
+        if wood:
+            input(skip + "You can't carry more wood, you're too weak. Press enter to continue...")
+        
+        if not wood:
+            input(skip + "You now have wood! Press enter to continue...")
+            wood = True
+            update_score()
+        
 
 
 def option_i() -> None: # called when user chooses the inventory
@@ -275,3 +282,6 @@ while game_state: # the game loop
 
     elif int(option) == 3 and tree_state and wood and len(show_options()) == 3:
         option_i() # calls inventory when there is a tree and there is wood
+
+    elif int(option) == 2 and tree_state and wood and len(show_options()) == 3:
+        option_t() # calls tree when there is a tree and there is wood
